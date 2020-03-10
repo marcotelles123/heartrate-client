@@ -1,6 +1,9 @@
 {
   "name": "hearth_rate",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.16.0"
+  },
   "private": true,
   "dependencies": {
     "@bit/amazingdesign.react-redux-mui-starter.toast": "0.0.5",
