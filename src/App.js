@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Tab from '@bit/semantic-org.semantic-ui-react.tab'
 import { makeStyles } from '@bit/mui-org.material-ui.styles'
 import "react-toastify/dist/ReactToastify.css";
 import FormAdd from './components/FormAdd/FormAdd';
 import FormList from './components/FormList/FormList';
-import Tab from '@bit/semantic-org.semantic-ui-react.tab'
+import VideoList from './components/VideoList/VideoList';
 
 const style = <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css' />
 
@@ -19,6 +20,11 @@ const panes = [
     menuItem: "Histórico",
     className: "NavBarStyle",
     render: () => <Tab.Pane attached={false}><FormList /></Tab.Pane>
+  },
+  {
+    menuItem: "Vídeos",
+    className: "NavBarStyle",
+    render: () => <Tab.Pane attached={false}><VideoList /></Tab.Pane>
   }
 ];
 

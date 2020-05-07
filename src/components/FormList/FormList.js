@@ -14,8 +14,8 @@ function FormList() {
         const response = await api.get('/rates');
         setRates(response.data);
     }
+    
     useEffect(() => {
-
         loadRates();
     }, []);
 
@@ -46,7 +46,6 @@ function FormList() {
     }
 
     function formatDate(date) {
-        debugger;
         var formattedDate = date.replace("T", " ");
         formattedDate = formattedDate.replace("Z", " ");
 
