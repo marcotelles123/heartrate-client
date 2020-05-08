@@ -3,3 +3,8 @@ li{
     cursor: pointer;
     font-weight: bolder;
 }
+label{
+    vertical-align: super;
+    cursor: pointer;
+    margin-right: 2%;
+}
