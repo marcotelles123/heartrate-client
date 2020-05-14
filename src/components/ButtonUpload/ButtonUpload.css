@@ -1,0 +1,31 @@
+button {
+    color: #594a95;
+    position: relative; 
+    font-size: 16px;
+    padding: 5px;
+    max-width: 53px;
+    border-radius: 5px;
+    background-color: #FFF;
+    transition: background-color 0.3s ease, box-shadow 0.7s ease;
+    border: hidden;
+}
+
+button :active{
+    top: 2px;
+}
+
+button:enabled:hover{
+    background-color: #FFF;
+    color: #594a9562;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 2px rgba(79,156,239,0.3);
+}
+
+button:focus {
+    outline: none;
+} 
+
+input{
+  max-width: 1px;
+  visibility: hidden;
+}
